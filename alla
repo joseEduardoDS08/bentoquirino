@@ -1,0 +1,8 @@
+CREATE TABLE alunos (
+	cpf INT(16)PRIMARY KEY,
+    rm INTEGER(16),
+    nome VARCHAR(266),
+    turmas_id INT(26),
+    FOREIGN KEY(turmas_id)REFERENCES turmas(turmas_id),
+    projetos_id INT(26),
+    FOREIGN KEY(projetos_id)REFERENCES projetos(projetos_id)
